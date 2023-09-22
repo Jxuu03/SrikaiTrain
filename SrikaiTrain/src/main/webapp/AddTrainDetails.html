@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Sarabun' rel='stylesheet'>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+            body, button, option, input {
+            	font-family: 'Sarabun';
+            }
+        </style>   
+        <title>Add Train Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <h1>Add Train Details</h1>
+        <form action="Add">
+            <table>
+                <tr><th>Train No.:</th><td><input type="number" name="TrainNo" min="1"></td></tr>
+                <tr><th>Train Type:</th>
+                    <td>
+                        <select name="TrainType">
+                            <option value="Special Express">Special Express</option>
+                            <option value="Express">Express</option>
+                            <option value="Rapid">Rapid</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>Origin:</th>
+                    <td>
+                        <select name="TrainOrigin">
+                            <option value="Chiang Mai">Chiang Mai</option>
+                            <option value="Krung Thep Aphiwat">Krung Thep Aphiwat</option>
+                            <option value="Nakhon Ratchasima">Nakhon Ratchasima</option>
+                            <option value="Pattaya">Pattaya</option>
+                            <option value="Ubon Ratchathani">Ubon Ratchathani</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>Destination:</th>
+                    <td>
+                        <select name="TrainDestination">
+                            <option value="Chiang Mai">Chiang Mai</option>
+                            <option value="Krung Thep Aphiwat">Krung Thep Aphiwat</option>
+                            <option value="Nakhon Ratchasima">Nakhon Ratchasima</option>
+                            <option value="Pattaya">Pattaya</option>
+                            <option value="Ubon Ratchathani">Ubon Ratchathani</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>Departure Date:</th><td><input type="date" name="TrainDate"></td>
+                <tr><th>Departure Time:</th><td><input type="time" name="TrainDepTime"></td>
+                <tr><th>Arrival Time:</th><td><input type="time" name="TrainArrTime"></td>
+                <tr><th>Ticket Price (฿) :</th><td><input type="number" name="TrainPrice" min="1"></td></tr>
+                <tr><td>&nbsp;</td><td><input type="submit" value="Add Train Details"></td></tr>
+            </table>
+        </form>
+        <a href="TrainData.html"><button>Back</button></a>
+    </center>
+    </body>
+</html>

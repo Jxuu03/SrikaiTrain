@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>Search</servlet-name>
+        <servlet-class>Servlet.Search</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Choose</servlet-name>
+        <servlet-class>Servlet.Choose</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Confirm</servlet-name>
+        <servlet-class>Servlet.Confirm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Ticket</servlet-name>
+        <servlet-class>Servlet.Ticket</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Search</servlet-name>
+        <url-pattern>/Search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Choose</servlet-name>
+        <url-pattern>/Choose</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Confirm</servlet-name>
+        <url-pattern>/Confirm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Ticket</servlet-name>
+        <url-pattern>/Ticket</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

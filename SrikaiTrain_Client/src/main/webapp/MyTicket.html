@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Sarabun' rel='stylesheet'>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+            body, button, option, input, select {
+                font-family: 'Sarabun';
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+        </style>    
+        <title>My Ticket</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <h1>My Ticket</h1>
+        <form action="Ticket">
+            <table>
+                <tr><th>First Name:</th><td><input type="text" name="First_Name"></td>
+                <tr><th>Last Name:</th><td><input type="text" name="Last_Name"></td>
+                <tr><td>&nbsp;</td><td><input type="submit" value="Search"></td></tr>
+            </table>
+        </form>
+        <br>
+        <a href="index.html"><button>Back</button></a>
+    </center>
+</body>
+</html>

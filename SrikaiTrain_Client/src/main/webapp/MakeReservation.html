@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Sarabun' rel='stylesheet'>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+            body, button, option, input, select {
+                font-family: 'Sarabun';
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+        </style>    
+        <title>Reservation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <h1>Search By Train Route</h1>
+        <form action="Search">
+            <table>
+                <tr><th>Origin:</th>
+                    <td>
+                        <select name="TrainOrigin">
+                            <option value="Chiang Mai">Chiang Mai</option>
+                            <option value="Krung Thep Aphiwat">Krung Thep Aphiwat</option>
+                            <option value="Nakhon Ratchasima">Nakhon Ratchasima</option>
+                            <option value="Pattaya">Pattaya</option>
+                            <option value="Ubon Ratchathani">Ubon Ratchathani</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>Destination:</th>
+                    <td>
+                        <select name="TrainDestination">
+                            <option value="Chiang Mai">Chiang Mai</option>
+                            <option value="Krung Thep Aphiwat">Krung Thep Aphiwat</option>
+                            <option value="Nakhon Ratchasima">Nakhon Ratchasima</option>
+                            <option value="Pattaya">Pattaya</option>
+                            <option value="Ubon Ratchathani">Ubon Ratchathani</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>Departure Date:</th><td><input type="date" name="TrainDate"></td>
+                <tr><td>&nbsp;</td><td><input type="submit" value="Search"></td></tr>
+            </table>
+        </form>
+        <br>
+        <a href="index.html"><button>Back</button></a>
+    </center>
+</body>
+</html>
